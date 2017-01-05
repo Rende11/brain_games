@@ -1,6 +1,7 @@
+G=brain-even.js
 install:
 	npm install
-run:
+run G:
 	npm run babel-node -- ./src/bin/brain-even.js
 
 publish:
