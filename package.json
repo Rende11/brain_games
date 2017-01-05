@@ -1,6 +1,6 @@
 {
   "name": "brain-game",
-  "version": "1.0.22",
+  "version": "1.0.2",
   "description": "simple game",
   "bin": {
     "brain-even": "./src/bin/brain-even.js"
