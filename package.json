@@ -1,6 +1,6 @@
 {
   "name": "brain-game",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "simple game",
   "bin": {
     "brain-even": "./src/bin/brain-even.js"
@@ -9,6 +9,9 @@
     "babel-node": "babel-node",
     "flow": "flow",
     "eslint": "eslint"
+  },
+  "dependencies": {
+  	"readline-sync": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
