@@ -6,7 +6,6 @@
     "brain-even": "./src/bin/brain-even.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
     "flow": "flow",
     "eslint": "eslint"
