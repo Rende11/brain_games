@@ -37,7 +37,6 @@ const iter = (acc, name, maxAttempts, genData, getCorrectResult, toString) => {
 };
 
 const playFullGame = (description, genData, getCorrectResult, toString, maxAttempts = 3) => {
-  console.log(genData);
   showGreeting();
   console.log(description);
   const name = getName();
