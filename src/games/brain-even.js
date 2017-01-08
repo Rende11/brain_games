@@ -1,5 +1,5 @@
 // @flow
-import playFullGame from '../common';
+import playFullGame from '../';
 import { getCustomRandomInt } from '../utils';
 
 const isEven = num => (num % 2 === 0 ? 'yes' : 'no');

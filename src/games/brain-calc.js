@@ -1,9 +1,9 @@
 // @flow
-import playFullGame from '../common';
+import playFullGame from '../';
 import { getCustomRandomInt, getRandomInt } from '../utils';
 
 const description = 'What is the result of the expression?\n';
-const operations = ['+', '-', '*', '/'];
+const operations = ['+', '-', '*'];
 const getRandomMathOperation = () => {
   const position = getRandomInt(0, operations.length);
   return operations[position];
@@ -24,8 +24,6 @@ const calc = (array) => {
       return first - second;
     case '*':
       return first * second;
-    case '/':
-      return first / second;
     default:
       return 'wrong operation';
   }

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
+// @flow
+import game from '../games/brain-calc';
 
-import start from '../index';
-
-start('calc');
+game();
