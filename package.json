@@ -1,11 +1,12 @@
 {
   "name": "brain-game",
-  "version": "1.1.5",
+  "version": "1.3.5",
   "description": "simple game",
   "bin": {
     "brain-even": "./src/bin/brain-even.js",
     "brain-gcd": "./src/bin/brain-gcd.js",
-    "brain-calc": "./src/bin/brains-calc.js"
+    "brain-calc": "./src/bin/brains-calc.js",
+    "brain-balance": "./src/bin/brains-balance.js"
   },
   "scripts": {
     "babel-node": "babel-node",
