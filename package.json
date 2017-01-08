@@ -3,7 +3,9 @@
   "version": "1.1.5",
   "description": "simple game",
   "bin": {
-    "brain-even": "./src/bin/brain-even.js"
+    "brain-even": "./src/bin/brain-even.js",
+    "brain-gcd": "./src/bin/brain-gcd.js",
+    "brain-calc": "./src/bin/brains-calc.js"
   },
   "scripts": {
     "babel-node": "babel-node",
