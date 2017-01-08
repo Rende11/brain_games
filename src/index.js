@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // @flow
 
-import { playEven } from './games/brain-even';
+import playEven from './games/brain-even';
 import playCalc from './games/brain-calc';
 
 const start = (gameName :string) => {

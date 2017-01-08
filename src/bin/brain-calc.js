@@ -2,4 +2,4 @@
 
 import start from '../index';
 
-console.log(start('calc'));
+start('calc');

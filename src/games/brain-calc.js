@@ -1,34 +1,31 @@
 // @flow
 import playFullGame from '../common';
-import { getRandomInt, myRandInt } from './brain-even';
+import { getCustomRandomInt, getRandomInt } from '../utils';
 
 const description = 'What is the result of the expression?\n';
-const operations = '+-*/';
+const operations = ['+', '-', '*', '/'];
 const getRandomMathOperation = () => {
   const position = getRandomInt(0, operations.length);
   return operations[position];
 };
 
-const generate = () => {
-  const array = [];
-  array.push(myRandInt());
-  array.push(myRandInt());
-  array.push(getRandomMathOperation());
-  return array;
-};
+const generate = () => [getCustomRandomInt(), getCustomRandomInt(), getRandomMathOperation()];
 
 const toString = array => `${array[0]} ${array[2]} ${array[1]}`;
 
 const calc = (array) => {
-  switch (array[2]) {
+  const first = array[0];
+  const second = array[1];
+  const operation = array[2];
+  switch (operation) {
     case '+':
-      return array[0] + array[1];
+      return first + second;
     case '-':
-      return array[0] - array[1];
+      return first - second;
     case '*':
-      return array[0] * array[1];
+      return first * second;
     case '/':
-      return array[0] / array[1];
+      return first / second;
     default:
       return 'wrong operation';
   }

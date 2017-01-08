@@ -16,6 +16,7 @@ const check = (correctChoise, userChoise) => (correctChoise === userChoise ?
   'Correct!' : `${userChoise} is wrong answer ;(. Correct answer was ${correctChoise}.`);
 
 const step = (genData, getCorrectResult, toString) => {
+  console.log(genData);
   const data = genData();
   const question = toString(data);
   showQuestion(question);
@@ -37,6 +38,7 @@ const iter = (acc, name, maxAttempts, genData, getCorrectResult, toString) => {
 };
 
 const playFullGame = (description, genData, getCorrectResult, toString, maxAttempts = 3) => {
+  console.log(genData);
   showGreeting();
   console.log(description);
   const name = getName();
