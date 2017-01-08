@@ -24,26 +24,24 @@ const step = (genData, getCorrectResult, toString) => {
   return check(correctChoise, userChoise);
 };
 
-const iter = (acc :number, name :string, maxAttempts :number, question,
-  getExpected :Function, toString :Function) => {
+const iter = (acc, name, maxAttempts, genData, getCorrectResult, toString) => {
   if (acc === maxAttempts) {
     return `Congratulations, ${name}!`;
   }
-  const result = step(question, getExpected, toString);
+  const result = step(genData, getCorrectResult, toString);
   console.log(result);
   if (result === 'Correct!') {
-    return iter(acc + 1, name, maxAttempts, question, getExpected, toString);
+    return iter(acc + 1, name, maxAttempts, genData, getCorrectResult, toString);
   }
   return `Let's try again, ${name}!`;
 };
 
-const playFullGame = (description :number, game :Function, func :Function,
-  toString, maxAttempts = 3) => {
+const playFullGame = (description, genData, getCorrectResult, toString, maxAttempts = 3) => {
   showGreeting();
   console.log(description);
   const name = getName();
   showHello(name);
-  return iter(0, name, maxAttempts, game, func, toString);
+  return iter(0, name, maxAttempts, genData, getCorrectResult, toString);
 };
 
 export default playFullGame;
