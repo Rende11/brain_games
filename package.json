@@ -5,8 +5,8 @@
   "bin": {
     "brain-even": "./src/bin/brain-even.js",
     "brain-gcd": "./src/bin/brain-gcd.js",
-    "brain-calc": "./src/bin/brains-calc.js",
-    "brain-balance": "./src/bin/brains-balance.js"
+    "brain-calc": "./src/bin/brain-calc.js",
+    "brain-balance": "./src/bin/brain-balance.js"
   },
   "scripts": {
     "babel-node": "babel-node",
