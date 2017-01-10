@@ -1,6 +1,6 @@
 {
   "name": "brain-game",
-  "version": "1.3.5",
+  "version": "1.4.5",
   "description": "simple game",
   "bin": {
     "brain-even": "./src/bin/brain-even.js",
@@ -11,7 +11,9 @@
   "scripts": {
     "babel-node": "babel-node",
     "flow": "flow",
-    "eslint": "eslint"
+    "eslint": "eslint",
+		"build": "babel src --out-dir dist",
+		"prepublish": "npm run build"
   },
   "dependencies": {
     "readline-sync": "*"

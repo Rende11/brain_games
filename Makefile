@@ -4,5 +4,10 @@ run:
 	npm run babel-node -- ./src/bin/$(G)
 eslint:
 	npm run eslint -- ./src
+
+build:
+	rm -rf dist
+	npm run build
+
 publish:
 	npm publish
