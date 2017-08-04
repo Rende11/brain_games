@@ -10,4 +10,4 @@ Availible in NPM
 
 [![Issue Count](https://codeclimate.com/github/Rende11/js_l1_brain_games-s12/badges/issue_count.svg)](https://codeclimate.com/github/Rende11/js_l1_brain_games-s12)
 
-[![Build Status](https://travis-ci.org/Rende11/js_l1_brain_games-s12.svg?branch=master)](https://travis-ci.org/Rende11/js_l1_brain_games-s12)
+[![Build Status](https://travis-ci.org/Rende11/brain_games.svg?branch=master)](https://travis-ci.org/Rende11/brain_games)

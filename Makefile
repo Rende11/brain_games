@@ -11,3 +11,6 @@ build:
 
 publish:
 	npm publish
+
+docker-run:
+	docker run -it --rm rende11/brainjs 
